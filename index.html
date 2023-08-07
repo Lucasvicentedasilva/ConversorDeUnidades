@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Conversor de Unidades</title>
+</head>
+<body class="bg-gray-700 flex justify-center items-center mx-auto h-screen ">
+    <div class="container bg-white rounded p-8 w-96">
+        <h1 class="text-2xl font-bold mb-6 text-center">Conversor de Unidades</h1>
+        <div class="input-group flex flex-col mb-3">
+          <label class="mb-4 font-bold " for="input">Digite a quantidade:</label>
+          <input class="p-2 rounded text-base bg-blue-200" type="number" id="input" placeholder="0" />
+        </div>
+        <div class="input-group flex flex-col mb-3">
+          <label class="mb-4 font-bold" for="from">De:</label>
+          <select class="p-2 rounded text-base bg-blue-200" id="from">
+            <option value="m">Metro(s)</option>
+            <option value="km">Quilômetro(s)</option>
+            <option value="cm">Centímetro(s)</option>
+            <option value="mm">Milímetro(s)</option>
+          </select>
+        </div>
+        <div class="input-group flex flex-col mb-3">
+          <label class="mb-4 font-bold" for="to">Para:</label>
+          <select class="p-2 rounded text-base bg-blue-200" id="to">
+            <option value="m">Metro(s)</option>
+            <option value="km">Quilômetro(s)</option>
+            <option value="cm">Centímetro(s)</option>
+            <option value="mm">Milímetro(s)</option>
+          </select>
+        </div>
+        <button class="bg-green-500 cursor-pointer rounded my-4 hover:bg-green-700 text-md text-white p-2" id="meuBotao">Converter</button>
+        <div class="output-group">
+          <label class="flex flex-col font-bold mb-3" for="output">Resultado:</label>
+          <input class="p-2 rounded text-black text-base bg-blue-200" type="text" id="output" readonly />
+        </div>
+        <div class="text-green-500 text-center mt-4" id="message"></div>
+      </div>
+</body>
+</html>
